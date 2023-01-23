@@ -1,1 +1,4 @@
-# muze-react
+# Muze
+## React
+
+Media library SPA.

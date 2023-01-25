@@ -16,7 +16,7 @@ function App() {
       }}
     >
       <div className='App'>
-        <header className='flex flex-col min-h-screen items-center justify-center text-slate-100 bg-slate-900'>
+        <header className='flex flex-col min-h-screen items-center justify-center text-zinc-700 dark:text-zinc-100 bg-zinc-100 dark:bg-zinc-900'>
           <div className='flex flex-row gap-1'>
             <SignInButton />
             <SignOutButton />

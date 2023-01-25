@@ -6,7 +6,7 @@ const SignInButton = () => {
 
   return (
     <button
-      className='bg-pink-600 text-slate-50 font-bold px-4 py-2 rounded-full m-2'
+      className='bg-indigo-900 hover:bg-indigo-800 text-slate-50 font-bold px-4 py-2 rounded-full m-2'
       onClick={() => loginWithRedirect()}
     >
       Sign in

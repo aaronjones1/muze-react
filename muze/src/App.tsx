@@ -2,9 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Auth0Provider } from '@auth0/auth0-react';
-import SignInButton from './components/signin-button/SignInButton';
-import SignOutButton from './components/signout-button/SignOutButton';
 import ProfileBlurb from './components/profile-blurb/ProfileBlurb';
+import Header from './components/header/Header';
 
 function App() {
   return (
@@ -15,12 +14,13 @@ function App() {
         redirect_uri: window.location.origin,
       }}
     >
-      <div className='App'>
-        <header className='flex flex-col min-h-screen items-center justify-center text-zinc-700 dark:text-zinc-100 bg-zinc-100 dark:bg-zinc-900'>
-          <div className='flex flex-row gap-1'>
+      <div className='App min-h-screen flex flex-col'>
+        <Header />
+        <header className='flex flex-col grow items-center justify-center text-zinc-700 dark:text-zinc-100 bg-zinc-100 dark:bg-zinc-800'>
+          {/* <div className='flex flex-row gap-1'>
             <SignInButton />
             <SignOutButton />
-          </div>
+          </div> */}
           <ProfileBlurb />
           <img src={logo} className='App-logo' alt='logo' />
           <p className='text-3xl font-black'>

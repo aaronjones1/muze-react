@@ -1,12 +1,16 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import MButton from '../components/m-button/MButton';
 
 export default {
   title: 'Muze Button',
   component: MButton,
-} as ComponentMeta<typeof MButton>;
+} as Meta<typeof MButton>;
 
-const Template: ComponentStory<typeof MButton> = () => <MButton text='Muze Button' />;
+const Template: StoryFn<typeof MButton> = (args) => <MButton {...args} />;
 
 export const Default = Template.bind({});
+Default.args = {
+  label: 'Muze Button',
+  size: 'medium',
+};

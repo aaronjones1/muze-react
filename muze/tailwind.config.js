@@ -4,8 +4,11 @@ module.exports = {
   darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {
+      borderRadius: {
+        '4xl': '2rem',
+      },
       transitionProperty: {
-        'width': 'width',
+        width: 'width',
       },
     },
   },

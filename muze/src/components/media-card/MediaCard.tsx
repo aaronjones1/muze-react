@@ -25,11 +25,15 @@ const MediaCard = (props: MediaCardProps) => {
   }
 
   return (
-    <button className="shrink-0" onClick={props.onClick}>
+    <button className='shrink-0' onClick={props.onClick}>
       <img
-        className={[sizeClasses, 'shadow-lg', 'shadow-zinc-900', 'hover:scale-110', 'transition-transform'].join(
-          ' '
-        )}
+        className={[
+          sizeClasses,
+          'shadow-lg',
+          'shadow-zinc-900',
+          'hover:scale-110',
+          'transition-transform',
+        ].join(' ')}
         src={props.imageURL}
         alt={props.imageAlt}
       />
@@ -40,7 +44,7 @@ const MediaCard = (props: MediaCardProps) => {
 export default MediaCard;
 
 // const refContainer = useRef();
-//   const [dimensions, setDimensions] = 
+//   const [dimensions, setDimensions] =
 //     useState({ width: 0, height: 0 });
 //   useEffect(() => {
 //     if (refContainer.current) {

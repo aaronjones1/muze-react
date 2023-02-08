@@ -14,11 +14,11 @@ export interface MediaItem {
   imageAlt: string;
 }
 
-function onSignIn(authUI: firebaseui.auth.AuthUI) {
-  authUI.start('#firebase-ui-auth-container', {
-    signInOptions: [EmailAuthProvider.PROVIDER_ID],
-  });
-}
+// function onSignIn(authUI: firebaseui.auth.AuthUI) {
+//   authUI.start('#firebase-ui-auth-container', {
+//     signInOptions: [EmailAuthProvider.PROVIDER_ID],
+//   });
+// }
 
 function App() {
   // Configure Firebase:
@@ -48,6 +48,11 @@ function App() {
       imageAlt: 'Cowboy Bebop The Movie',
       imageURL:
         'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1886/18860058_so.jpg',
+    },
+    {
+      imageAlt: 'Yu Yu Hakusho',
+      imageURL:
+        'https://m.media-amazon.com/images/M/MV5BYTFiMTE2Y2YtMzNkMi00MTNhLTkxMTEtMDA1N2FhYmY1ZjQ3XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg',
     },
     {
       imageAlt: 'Custom Robo (GCN)',
@@ -86,8 +91,7 @@ function App() {
     },
     {
       imageAlt: 'Fooly Cooly',
-      imageURL:
-        'https://www.previewsworld.com/SiteImage/MainImage/STK174337',
+      imageURL: 'https://www.previewsworld.com/SiteImage/MainImage/STK174337',
     },
     {
       imageAlt: 'Metroid Prime',
